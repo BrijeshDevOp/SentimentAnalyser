@@ -2,6 +2,7 @@ services:
   - type: web
     name: sentiment-flask-app
     runtime: python
+    pythonVersion: 3.12.3
     buildCommand: pip install -r requirements.txt
     startCommand: python app.py
     envVars:
